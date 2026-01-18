@@ -1,61 +1,131 @@
-
 # 🔐 Phishing Detection Tool
 
 👤 **Solo Project**  
-📌 Category: Applied Machine Learning | Cybersecurity
+📌 Category: Applied Machine Learning | Web Application  
+🎯 Domain: Cybersecurity
 
 ---
 
 ## 📖 Problem Statement
-Phishing attacks are one of the most common cybersecurity threats, often tricking users into sharing sensitive information through deceptive messages or links.  
-The challenge is to **automatically identify phishing content** using patterns present in text data.
+Phishing attacks are a major cybersecurity threat where users are tricked into revealing sensitive information through malicious messages or links.  
+Relying only on manual detection or static rules is ineffective, creating the need for **automated and intelligent detection systems**.
 
 ---
 
 ## 🎯 Project Objective
-To build a machine learning–based system that can **classify textual data as phishing or legitimate**, helping improve awareness and detection of malicious content.
+To build a **hybrid phishing detection system** that combines:
+- **Machine Learning–based text classification**
+- **Google Safe Browsing (Checker) API**
+- A **Flask-based web interface**
+
+The goal was to improve detection reliability by using **both predictive models and trusted external threat intelligence**.
+
+---
+
+## 🧩 Key Features
+
+### 🧠 ML-Based Text Detection
+- Classifies input text as phishing or legitimate
+- Uses trained supervised classification models
+- Handles unseen inputs through preprocessing and feature extraction
+
+---
+
+### 🌐 Google Safe Browsing API Integration
+- Checks URLs against Google’s known phishing and malicious databases
+- Adds an additional verification layer beyond ML predictions
+- Helps reduce false negatives in real-world scenarios
+
+---
+
+### 🌐 Flask Web Interface
+- Simple web UI for user input
+- Flask routes for handling predictions
+- Displays real-time detection results
+
+---
+
+### 🔄 End-to-End Workflow
+1. User inputs text or URL
+2. Text is preprocessed and passed to ML model
+3. URLs are checked using Google Safe Browsing API
+4. Combined result is returned to the user via web interface
 
 ---
 
 ## 🛠️ Technical Approach
-1. Collected and prepared labeled text data
-2. Performed text preprocessing:
+
+1. Data preparation and text cleaning
+2. NLP preprocessing:
    - Lowercasing
-   - Removing special characters
    - Tokenization
    - Stopword removal
-3. Converted text into numerical features using:
+   - Special character handling
+3. Feature extraction using:
    - TF-IDF / Count Vectorization
-4. Trained classification models to distinguish phishing content
-5. Evaluated model performance using standard metrics
+4. Training supervised ML classification models
+5. Integrating trained model with Flask backend
+6. Calling Google Safe Browsing API for URL validation
+7. Returning consolidated results to the frontend
 
 ---
 
-## 🧰 Technologies & Libraries Used
+## 🧰 Technologies, Libraries & Tools
 
-### Programming Language
+### **Programming Language**
 - Python
 
-### Libraries & Tools
+---
+
+### **Web Framework**
+- Flask
+
+---
+
+### **Machine Learning & NLP**
 - Scikit-learn
 - Pandas
 - NumPy
 
-### ML Concepts
-- Text preprocessing
-- Feature extraction
-- Supervised classification
-- Model evaluation
+---
+
+### **External API**
+- Google Safe Browsing (Checker) API
+
+---
+
+### **Frontend (Flask Templates)**
+- HTML
+- Basic CSS
+
+---
+
+### **Development Tools**
+- Git & GitHub
+- VS Code
+- Python virtual environment
 
 ---
 
 ## 🧠 Key Learnings
-- End-to-end ML workflow (data → model → evaluation)
-- Importance of clean preprocessing for text-based models
-- Practical application of ML in cybersecurity
-- Independent project planning and execution
+- Designing hybrid security systems (ML + API-based detection)
+- Integrating external APIs with ML workflows
+- Flask-based backend development for ML inference
+- Handling real-world cybersecurity use cases
+- Understanding trade-offs between ML predictions and rule-based checks
 
 ---
 
-## 📌 Project Type
-This project demonstrates **applied machine learning**, focusing on practical problem-solving rather than theoretical research.
+## 📌 Project Nature
+This project demonstrates a **practical cybersecurity application**, combining:
+- Applied machine learning
+- Backend web development
+- External threat intelligence
+
+It focuses on **real-world usability**, not theoretical ML experimentation.
+
+---
+
+## 🔗 Related Repository
+👉 Main code repository:  
+https://github.com/YatharthM-07/phishing_detection_tool
