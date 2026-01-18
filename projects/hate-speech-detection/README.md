@@ -1,32 +1,31 @@
-# 🔐 Phishing Detection Tool
+# 🗣️ Hate Speech & Offensive Language Detection
 
 👤 **Solo Project**  
-📌 Category: Applied Machine Learning | Cybersecurity
+📌 Category: Natural Language Processing | Applied Machine Learning
 
 ---
 
 ## 📖 Problem Statement
-Phishing attacks are one of the most common cybersecurity threats, often tricking users into sharing sensitive information through deceptive messages or links.  
-The challenge is to **automatically identify phishing content** using patterns present in text data.
+Online platforms face challenges in moderating content that includes **hate speech and offensive language**.  
+Manual moderation is time-consuming, making automated detection an important area of study.
 
 ---
 
 ## 🎯 Project Objective
-To build a machine learning–based system that can **classify textual data as phishing or legitimate**, helping improve awareness and detection of malicious content.
+To design a machine learning–based NLP system that can **classify text as hate speech, offensive language, or neutral**, supporting content moderation efforts.
 
 ---
 
 ## 🛠️ Technical Approach
-1. Collected and prepared labeled text data
-2. Performed text preprocessing:
-   - Lowercasing
-   - Removing special characters
+1. Used a labeled dataset containing text samples
+2. Applied NLP preprocessing techniques:
+   - Text normalization
    - Tokenization
    - Stopword removal
-3. Converted text into numerical features using:
+3. Transformed text data into numerical representations using:
    - TF-IDF / Count Vectorization
-4. Trained classification models to distinguish phishing content
-5. Evaluated model performance using standard metrics
+4. Trained classification models on processed data
+5. Evaluated results to understand model behavior and limitations
 
 ---
 
@@ -40,21 +39,20 @@ To build a machine learning–based system that can **classify textual data as p
 - Pandas
 - NumPy
 
-### ML Concepts
+### NLP Concepts
 - Text preprocessing
 - Feature extraction
-- Supervised classification
-- Model evaluation
+- Supervised text classification
 
 ---
 
 ## 🧠 Key Learnings
-- End-to-end ML workflow (data → model → evaluation)
-- Importance of clean preprocessing for text-based models
-- Practical application of ML in cybersecurity
-- Independent project planning and execution
+- Practical exposure to NLP workflows
+- Handling real-world text data
+- Understanding bias and limitations in text classification
+- Applying ML for socially impactful problems
 
 ---
 
 ## 📌 Project Type
-This project demonstrates **applied machine learning**, focusing on practical problem-solving rather than theoretical research.
+This project focuses on **applied NLP**, emphasizing real-world use cases rather than experimental research.
