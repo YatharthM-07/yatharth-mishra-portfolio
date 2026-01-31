@@ -104,7 +104,7 @@ I am looking for **internship opportunities in India** where I can:
 
 ## 📫 Contact & Profiles
 - GitHub: https://github.com/YatharthM-07  
-- Email: mishrayatharth@gmail.com  
+- Email: mishrayatharth39@gmail.com  
 - LinkedIn: www.linkedin.com/in/yatharth-mishra01
 
 ---
